@@ -109,3 +109,18 @@ You will need the following to run the above:
 
 ### Related Work
 - Michael Ramos ported this network [to use CoreML on iOS](https://medium.com/@rambossa/diy-prisma-fast-style-transfer-app-with-coreml-and-tensorflow-817c3b90dacd)
+
+
+## Instruction from Udacity 
+
+### Setup
+
+$ conda create -n style-transfer python=3
+$ source activate style-transfer
+$ conda install tensorflow scipy pillow
+$ pip install moviepy
+$ python -c "import imageio; imageio.plugins.ffmpg.download()"
+
+
+### Run
+$ python evaluate.py --checkpoint ./path/to/checkpoint.ckpt --in-path <path_to_input_file> --out-path ./output_image.jpg
